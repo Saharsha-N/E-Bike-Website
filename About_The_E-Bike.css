@@ -12,6 +12,7 @@ h1.mainTitle {
     font-weight: 600;
     font-size: 50px;
     color: rgb(255, 255, 255);
+    font-display: TESLA;
 }
 
 h2 {
@@ -19,6 +20,7 @@ h2 {
     font-size: 25px;
     margin: 0% 3%;
     font-family: Mylodon;
+    font-display: Mylodon;
 }
 
 h1.Logo {
@@ -28,6 +30,7 @@ h1.Logo {
     left: 15px;
     position: absolute;
     color: white;
+    font-display: TESLA;
 }
 
 h1.Logo a {
@@ -152,6 +155,7 @@ p.textarea {
     font-size: 17px;
     size: 50%;
     vertical-align: center;
+    font-display: Fira Code;
 }
 h2.urbanVersion {
     font-family: system-ui;
