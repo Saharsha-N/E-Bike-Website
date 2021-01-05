@@ -59,8 +59,9 @@ h2 {
 }
 
 h2.grabber {
-  font-size: 24px;
-  margin: 3% 2%;
+  font-size: 28px;
+  margin: 2% 1%;
+  font-family: Neutronium;
 }
     
 .ebike, .about_us {
