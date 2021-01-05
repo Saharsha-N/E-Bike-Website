@@ -1,0 +1,130 @@
+h1.completeTitle {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-bottom: 4px;
+  margin-bottom: 1px;
+  font-family: Mylodon;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px gray;
+  font-display: Mylodon;
+}
+
+.divider {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h3 {
+  text-align: center;
+}
+
+h1.Logo {
+  font-family: TESLA;
+  font-size: 32px;
+  top: 50px;
+  left: 30px;
+  position: sticky;
+  font-display: TESLA;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .75;
+}
+
+div.transbox:hover {
+  transition: 0.4s;
+  opacity: 90%;
+}
+
+div.transbox p {
+  margin: 3%
+}
+
+div.transbox h2 {
+  margin: 3%;
+}
+
+div.transbox li {
+  margin: 3%;
+}
+
+h2 {
+  font-family: system-ui;
+  font-size: 20px;
+  text-align: center;
+}
+
+h2.grabber {
+  font-size: 24px;
+  margin: 3% 2%;
+}
+    
+.ebike, .about_us {
+  background: transparent;
+  border: 3px;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+  color: rgb(0, 0, 0);
+}
+
+.ebike, .about_us:hover {
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+.reasons {
+  font-size: 16px;
+}
+
+.buttons {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.32);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  opacity: 0.5;
+  transition: 0.4s;
+}
