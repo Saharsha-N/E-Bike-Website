@@ -1,0 +1,42 @@
+h1.title {
+    font-family: Mylodon;
+    font-size: 40px;
+    color: rgb(203, 223, 228);
+    text-align: center;
+    font-display: Mylodon;
+}
+
+.Logo {
+    font-family: TESLA;
+    font-size: 28px;
+    top: 5px;
+    left: 15px;
+    position: absolute;
+    color: white;
+    font-display: TESLA;
+    text-decoration: none;
+}
+
+.individuals {
+    font-family: system-ui;
+    color: black;
+    text-align: center;     
+}
+
+p.individualsInfo1 {
+    font-family: Fira Code;
+    margin: 1% 10%;
+    text-align: center;
+}
+
+p.individualsInfo2 {
+    font-family: Fira Code;
+    margin: 1% 10%;
+    text-align: center;
+}
+
+p.individualsInfo3 {
+    font-family: Fira Code;
+    margin: 1% 10%;
+    text-align: center;
+}
