@@ -1,0 +1,154 @@
+h1.completeTitle {
+  color: white;
+  text-align: center;
+  padding-bottom: 4px;
+  margin-bottom: 1px;
+  font-family: Mylodon;
+  font-size: 50px;
+  font-weight: bold;
+  font-display: system-ui;
+}
+
+.divider {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.learnmore {
+  color: black;
+  text-decoration: none;
+  font-family: system-ui;
+}
+
+h3 {
+  text-align: center;
+}
+
+h1.Logo {
+  font-family: TESLA;
+  font-size: 32px;
+  top: 0%;
+  left: 2%;
+  position: relative;
+  font-display: TESLA;
+  color: white;
+  animation-name: Logo;
+  animation-duration: 4s;
+  animation: Logo 5s infinite;
+  
+}
+
+@keyframes Logo{
+  33% { color: lime; }
+  66% { color: grey; }
+  100% { color: white;}
+}
+
+div.transbox {
+  margin: 30px;
+  background-color:#91d432;
+  border: 1px solid black;
+  opacity: 90%;
+  align-items: center;
+  color: black;
+}
+
+div.transbox:hover {
+  transition: 0.4s;
+  opacity: 100%;
+}
+
+div.transbox p {
+  margin: 3%
+}
+
+div.transbox h2 {
+  margin: 3%;
+}
+
+div.transbox li {
+  margin: 3%;
+}
+
+h2 {
+  font-family: system-ui;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*h2.grabber {
+  font-size: 40px;
+  font-family: Hasklig;
+  position: relative;
+  margin: 4% 1%;
+  /*padding: 35px 0;
+  background-color: white;
+  opacity: 90%;
+}*/
+    
+.ebike, .about_us {
+  background: transparent;
+  border: 3px;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+  color: rgb(0, 0, 0);
+}
+
+.ebike, .about_us:hover {
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+.reasons {
+  font-size: 16px;
+}
+
+.buttons {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #86c232;
+  border: none;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(98, 98, 98);
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.32);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  opacity: 0.5;
+  transition: 0.4s;
+}
