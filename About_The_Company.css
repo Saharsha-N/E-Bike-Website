@@ -1,0 +1,437 @@
+h1.title {
+  font-family: Mylodon;
+  font-size: 44px;
+  color: rgb(255, 253, 208);
+  text-align: center;
+  font-display: Mylodon;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+
+h1.title1 {
+  margin-top: 7%;
+  font-family: Mylodon;
+  font-size: 44px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-display: Mylodon;
+}
+
+@font-face {
+   font-family: 'teslaregular';
+   src: url('tesla-webfont.woff2') format('woff2'),
+        url('tesla-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+.Logo {
+   font-family: Proza Libre;
+   fallback: Proza Libre;
+   font-size: 28px;
+   margin-left: 1%;
+   margin-top: 2%;
+   position: relative;
+   color: white;
+   font-display: Proza Libre;
+   animation-name: Logo;
+   text-decoration: none;
+}
+
+.Logo {
+  animation-name: Logo;
+  animation-duration: 4s;
+  animation: Logo 5s infinite;
+}
+
+@keyframes Logo {
+  33% { color: #5AB9EA; }
+  66% { color: grey; }
+  100% { color: white;}
+}
+
+.ebike, .MainPage {
+  background: transparent;
+  border: 3px;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+  color: rgb(0, 0, 0);
+}
+
+/*Underline effect for the titles*/
+
+a.left {
+  position: relative;
+  color: white;
+  animation-name: underline;
+  animation-iteration-count: 1;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes underline{
+  from {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+  }
+  to {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.button-s {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+/*The transparent boxes under the creators of the company*/
+
+div.Saharsha, div.Prajith, div.Samuel {
+  margin: 3.5%;
+  background-color: rgb(220,220,220);
+  border: 1px solid black;
+  opacity: .75;
+  align-items: center;
+  color: rgb(36, 72, 148);
+}
+
+div.Saharsha {
+   top: 16px;
+   position: relative;
+}
+
+div.Samuel {
+   position: relative;
+   top: 25px;
+}
+
+div.Saharsha:hover, div.Prajith:hover, div.Samuel:hover {
+  transition: 0.8s;
+  color: white;
+  background-color: #5AB9EA;
+}
+
+div.Saharsha, div.Prajith, div.Samuel {
+  transition: 1s;
+  opacity: 85%;
+}
+
+.container:hover {
+  position: relative;
+}
+
+.center {
+  position: relative;
+  top: 100%;
+  left: 5.8%;
+  font-size: 18px;
+}
+
+.center1 {
+  position: relative;
+  top: 100%;
+  left: 3.55%;
+  font-size: 18px;
+}
+
+.center2 {
+  position: relative;
+  top: 100%;
+  left: 2.05%;
+  font-size: 18px;
+}
+
+.Logo {
+  font-family: TESLA;
+  font-size: 28px;
+  top: 5px;
+  left: 15px;
+  position: absolute;
+  color: white;
+  font-display: TESLA;
+  text-decoration: none;
+}
+
+.individuals {
+  font-family: system-ui;
+  color: rgb(0, 0, 0);
+  text-align: center;     
+}
+
+.individuals:hover {
+  color: rgb(255, 253, 208);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 42%;
+  left: 40%;
+  right: 0%;
+  background-color: rgba(0, 110, 255, 0.493);
+  overflow: hidden;
+  width: 0;
+  height: 30%;
+  transition: .5 ease;
+}
+
+.container:hover .overlay {
+  width: 20%;
+  transition: 1.2s;
+}
+
+.container {
+  max-width: 100%;
+} 
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  transition: 1s;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;                
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}                
+                
+.Images {
+  display: block;
+}
+
+.Images {
+  position: relative;
+  left: 10%; 
+  border: 3px solid rgba(28, 157, 180, 0.829);
+  border-radius: 110px;
+  display: block;
+}
+
+.Images {
+  transition: 0.7s;
+}
+
+.Images:hover {
+  opacity: 100%;
+  border: 6px solid rgba(39, 223, 255, 0.788);
+  border-radius: 170px;
+  transition: 0.6s ease;
+}
+
+p.individualsInfo1, p.individualsInfo2, p.individualsInfo3 {
+  position: relative;
+  font-family: 'Open Sans';
+  margin: 1% 10%;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.textarea {
+  max-width: 70%;
+  margin: 2% 14%;
+  top: 11%;
+  font-family: 'Open Sans';
+  position: relative;
+  font-size: 17px;
+  text-align: left;
+  color: rgb(36, 72, 148);
+}
+
+.Impact {
+  font-family: system-ui;
+  color: white;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.buttons {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  float: center;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(216, 193, 174);
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.32);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(155, 138, 125);
+  transition: 0.5s;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 0.3s;
+}
+
+.dropdown:hover .dropbtn {
+  opacity: 0.5;
+  transition: 0.4s;
+}
+
+div.transbox  {
+  max-width: 65%;
+  position: relative;
+  left: 15%;
+  height: 25%;
+  padding: 3px;
+  background-color: rgb(220,220,220);
+  opacity: .75;
+  margin: 30px;
+}
+div.transbox .textarea {
+  margin-top: 3%;
+}
+
+div.transbox:hover {
+  opacity: 100%;
+  transition: 0.4s;
+}
+
+/*Footer*/
+
+.footer {
+   background: #666666;
+   color: wh;
+   height: 400px;
+   position: relative;
+   top: 30%;
+ }
+ 
+ .footer .footer-content {
+   border: 1px solid;
+   height: 350px;
+   display: flex;
+ }
+ 
+ .footer .footer-content .footer-section {
+   flex: 1;
+   padding: 25px;
+ }
+
+.footer .footer-content .links .QuickLinks:hover {
+   left: 2%;
+   transition: ease-in-out;
+}
+ 
+ .footer .footer-content h1,
+ .footer .footer-content h2 {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ .footer .footer-content .about h1 span {
+    color: #05f7ff;
+ }
+
+ 
+ .footer .footer-content .about .contact span {
+   color: white;
+   font-family: Open Sans;
+ }
+ 
+ .footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+ }
+ 
+ .footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+ }
+ 
+ .footer .footer-bottom {
+   background: #414850;
+   color: #9b9b9b;
+   height: 50px;
+   text-align: center;
+   vertical-align: center;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   padding-top: 20px;
+   width: 100%;
+ }
+ 
+ .contact-input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+ }
