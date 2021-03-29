@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+   <link href = "Feedback_Slider.css" rel  = "stylesheet">
+
+   <meta charset="UTF-8">
+
+   <link href = "index.css" rel  = "stylesheet">
+   
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <title>Give Us Feedback</title>
+
+<style>
+
+body {
+   background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/129325364/original/afaddcb9d7dfaaf5bff7ef04101935814665ac16/design-an-attractive-background-for-your-website.png');
+   margin: 0;
+   font-family: "Lato", sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+.happiness__modal {
+   background: #fff;
+   max-width: 780px;
+   margin: 40px auto;
+   width: 80%;
+   height: 300px;
+   max-height: 0;
+   position: relative;
+   z-index: 2;
+   pointer-events: none;
+   opacity: 0;
+   transition: opacity 0.2s ease;
+   transition-delay: 0;
+   max-height: 10000px;
+   pointer-events: auto;
+   opacity: 1;
+}
+
+.happiness__header {
+   height: 150px;
+   background: #cea052;
+   background: linear-gradient(to right, #cea052, #fdcba1);
+   transition: background 0.3s ease;
+   will-change: background;
+   overflow: hidden;
+   color: #fff;
+   transition: max-height 0.2s ease;
+   position: relative;
+}
+
+.happiness__header--label {
+   font-weight: 400;
+   font-size: 1.6em;
+   position: absolute;
+   left: 250px;
+   top: 2.5em;
+}
+
+.happiness__emoji {
+   border-radius: 50%;
+   height: 150px;
+   width: 150px;
+   top: 20px;
+   left: 40px;
+   border: 5px solid #fff;
+   position: relative;
+   direction: ltr;
+   transform-origin: top left;
+   transition: transform 0.2s ease;
+}
+
+.happiness__emoji--eyeR, .happiness__emoji--eyeL {
+   width: 8%;
+   height: 8%;
+   border-radius: 50%;
+   background: #fff;
+   position: absolute;
+   top: 38%;
+   left: 33%;
+   margin-left: -4%;
+   margin-top: -4%;
+   display: block;
+   transition: all 0.2s ease;
+}
+
+.happiness__emoji--eyeBrew {
+   width: 200%;
+   position: absolute;
+   height: 30%;
+   top: -75%;
+   border-radius: 6px;
+   background: #fff;
+   opacity: 0;
+   transform: translateX(-25%);
+   transition: all 0.2s ease;
+}
+
+.happiness__emoji--eyeR .happiness__emoji--eyeBrew {
+   transform: translate(-30%, 180%) rotate(-30deg);
+}
+
+.happiness__emoji--eyeL .happiness__emoji--eyeBrew {
+   transform: translate(-20%, 180%) rotate(30deg);
+}
+
+.happiness__emoji--eyeR {
+   left: 66%;
+}
+
+.happiness__emoji--mouth {
+   border: 5px solid #fff;
+   border-top-color: transparent;
+   border-left: transparent;
+   border-right: transparent;
+   border-radius: 0;
+   position: absolute;
+   display: inline-block;
+   bottom: 30%;
+   left: 27%;
+   min-width: 44%;
+   min-height: 40px;
+   transition: all 0.2s ease;
+   transform-origin: bottom center;
+}
+
+.happiness__main {
+   height: 50%;
+   color: #c4c4c4;
+   padding: 30px 0;
+}
+
+.happiness__main--slider {
+   display: flex;
+   align-items: center;
+  
+   padding: 20px;
+}
+.happiness__main--slider label {
+   margin: 0 1em;
+   font: 200 2em/0.9 "Lato", sans-serif;
+   text-transform: capitalize;
+}
+
+input[type=range] {
+   width: 100%;
+   height: 10px;
+   border-radius: 5px;
+   outline: none !important;
+   background: linear-gradient(to right, #bf7540, #e8d67d);
+   -webkit-appearance: none;
+}
+
+input[type=range]::-ms-track {
+   height: 10px;
+   border: none;
+   color: transparent;
+}
+
+input[type=range]::-ms-fill-upper {
+   background-color: #fff;
+}
+
+input[type=range]::-ms-fill-lower {
+   background-color: #267928;
+}
+
+input[type=range]::-ms-fill-upper, input[type=range]::-ms-fill-lower {
+   border: solid 2px #444;
+   border-radius: 8px;
+   -webkit-appearance: none;
+}
+
+input[type=range]::-ms-thumb {
+   border: 8px solid #fff;
+   width: 24px;
+   height: 24px;
+   background: none;
+   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+   border-radius: 50%;
+   box-sizing: border-box;
+   -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-track {
+   border: solid 2px #fff;
+   background: linear-gradient(to right, #bf4040, #a1e87d);
+   border-radius: 8px;
+   height: 10px;
+   -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-thumb {
+   border: 8px solid #fff;
+   width: 24px;
+   box-sizing: border-box;
+   height: 24px;
+   background: none;
+   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+   border-radius: 50%;
+   -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+   border: 8px solid #fff;
+   width: 24px;
+   height: 24px;
+   background: none;
+   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+   border-radius: 50%;
+   box-sizing: border-box;
+   -webkit-appearance: none;
+}
+
+</style>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<h1 class="Logo"><a href="index.html" class="Logo">TYKO</a></h1>
+
+<h1 class="mainTitle">Give Us More Feedback</h1>
+
+<body translate="no" >
+  <div class="happiness">
+  <div class="happiness__modal">
+    <div class="happiness__header">
+      <div class="happiness__emoji">
+        <span class="happiness__emoji--eyeL">
+          <span class="happiness__emoji--eyeBrew"></span>
+        </span>
+        <span class="happiness__emoji--eyeR">
+          <span class="happiness__emoji--eyeBrew"></span>
+        </span>
+        <span class="happiness__emoji--mouth"></span>
+      </div>
+      <span class="happiness__header--label">Your Feedback means the world to us</span>
+      <a class="happiness__header--close" href="javascript:;"><span></span><span></span></a>
+    </div>
+    <div class="happiness__main">
+      <div class="happiness__main--slider">
+        <label>sad</label>
+        <input id="happinessSlider" type="range" step="1" min="0" max="100" oninput="updateValue(this)">
+        <label>happy</label>
+        <div id="progress"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<textarea name="message" class="text-input contact-input" placeholder="Your message..." style="height: 150px;"></textarea>
+
+<button class="feedbackSend" onclick="window.location.href='\Feedback.html'">Send</button>
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  
+      <script id="rendered-js" >
+function updateValue(input) {
+  var transform = `scaleY(${(input.value - 50) * .0125 + 1}) scaleX(${1 - (input.value - 50) * .006}) translate(-${(input.value - 50) * .3}%, -${(input.value - 50) * .4}%)`;
+  var gradient = `linear-gradient(to right, hsl(${input.value * .5}, 50%, 50%), hsl(${input.value}, 70%, 70%))`;
+  input.style.background = gradient;
+  document.querySelector('.happiness__header').style.background = gradient;
+  document.querySelector('.happiness__emoji--eyeL').style.transform = `${input.value < 50 ? 'none' : transform}`;
+  document.querySelector('.happiness__emoji--eyeR').style.transform = `${input.value < 50 ? 'none' : transform}`;
+  document.querySelector('.happiness__emoji--eyeL .happiness__emoji--eyeBrew').style.height = `${30 + (50 - input.value) * .3}%`;
+  document.querySelector('.happiness__emoji--eyeR .happiness__emoji--eyeBrew').style.height = `${30 + (50 - input.value) * .3}%`;
+  document.querySelector('.happiness__emoji--eyeL .happiness__emoji--eyeBrew').style.opacity = `${(50 - input.value) * .02}`;
+  document.querySelector('.happiness__emoji--eyeR .happiness__emoji--eyeBrew').style.opacity = `${(50 - input.value) * .02}`;
+  document.querySelector('.happiness__emoji--mouth').style.transform = `scale(${input.value - 50 >= 0 ? 1 : -1})`;
+  document.querySelector('.happiness__emoji--mouth').style.borderRadius = `0 0 ${Math.abs(input.value - 50)}% ${Math.abs(input.value - 50)}%`;
+  document.querySelector('.happiness__emoji--mouth').style.bottom = `${30 - (input.value - 50) * .1}%`;
+}
+
+
+
+$('#happinessSlider').slider({
+  range: "min",
+  min: 0,
+  max: 100,
+  animate: true,
+  slide: function (event, ui) {
+    $("#progress").html(ui.value + "%");
+  } });
+
+$("#progress").html($("#happinessSlider").slider("value") + "%");
+
+$("input, select").change(function () {
+  var fields = $("input, select");
+  var percentage = 100 * fields.filter(function () {
+    return $.trim(this.value) != "";
+  }).length / fields.length;
+  $("#happinessSlider").slider("value", percentage);
+  $("#progress").html(percentage + "%");
+});
+    </script>
+
+  
+
+</body>
+
+</html>
