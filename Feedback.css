@@ -1,0 +1,25 @@
+.goBack, .anotherResponse, .moreFeedback{
+    background-color: #76b6ff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: Open Sans;
+    border-radius: 25px;
+}
+
+.moreFeedback {
+   margin-left: 0%;
+}
+.titleButton span {
+   color: white;
+}
+
+
+.goBack{
+   margin-left: 10%;
+}
+.goBack:hover, .anotherResponse:hover, .moreFeedback:hover {
+   background-color: rgb(20, 0, 109);
+   transition: 0.6s ease;
+   color: rgb(255, 255, 255);
+}

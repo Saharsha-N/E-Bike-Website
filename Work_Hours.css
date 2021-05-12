@@ -1,0 +1,204 @@
+body {
+   background-image: url('https://i.pinimg.com/originals/7f/e7/74/7fe774bbacce09f00cb5b2e3cbc48db3.png');
+   background-size: cover;
+   scroll-behavior: smooth;
+}
+
+.main .work_hours { 
+   font-family: Open Sans;
+   color: white;
+   text-align: center;
+   font-size: 28px;
+   margin-top: 10%;
+   animation: tableImage2 3s ease;
+   animation-iteration-count: 1;
+}
+
+.main .work_hours span {
+   font-weight: bold;
+}
+
+.main .work_hours .name {
+   color: #5AB9EA;
+}
+
+/*Dropdowns*/
+
+.buttons {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .dropbtn {
+   background-color: transparent;
+   color: white;
+   border: none;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   float: center;
+   background-color: transparent;
+   color: #5ec3f5;
+   border: none;
+   padding: 5px;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+ }
+ 
+ .dropdown {
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgb(0, 0, 0);
+   min-width: 140px;
+   box-shadow: 0px 8px 16px 0px rgb(57, 193, 218);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   color: rgb(255, 255, 255);
+   padding: 10px 14px;
+   text-decoration: none;
+   display: block;
+   
+ }
+ 
+ .dropdown-content a:hover {
+   background-color: rgb(44, 212, 218);
+   transition: 0.5s;
+   color: black;
+   font-weight: bold;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+   transition: 0.3s;
+ }
+
+/*Logo + (Keyframes)*/
+
+.Logo {
+   font-family: Proza Libre;
+   fallback: Proza Libre;
+   font-size: 28px;
+   margin-left: 1%;
+   margin-top: 2%;
+   position: relative;
+   color: white;
+   font-display: Proza Libre;
+   animation-name: Logo;
+   text-decoration: none;
+}
+
+.Logo {
+  animation-name: Logo;
+  animation-duration: 4s;
+  animation: Logo 5s infinite;
+}
+
+@keyframes Logo {
+  33% { color: #5AB9EA; }
+  66% { color: grey; }
+  100% { color: white;}
+}
+
+
+/*Use the code below to show improvement from old code to new code. 
+Explain from term and how it was used to improve the code.*/
+
+/*@keyframes:disabled tableImage
+{
+    0% {
+        opacity: 0%;
+    }
+
+    6.25% {
+        opacity: 6.25%;
+    }
+
+    12.5%{
+        opacity: 12.5%;
+    }
+
+    18.75%{
+        opacity: 18.75%;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+    
+    31.75%{
+        opacity: 31.74%;
+    }
+    
+    37.5%{
+        opacity: 37.5%;
+    }
+
+    42.75%{
+        opacity: 42.75%
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    56.25%{
+        opacity: 56.25%
+    }
+
+    62.5% {
+        opacity: 62.5%;
+    }
+
+    68.75%{
+        opacity: 68.75%;
+    }
+
+    75% {
+        opacity: 75%;
+    }
+
+    81.25%{
+        opacity: 81.25%;
+    }
+
+    87.5% {
+        opacity: 87.5%;
+    }
+
+    93.75%{
+        opacity: 93.75;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}*/
+
+/*Fade in animation*/
+
+@keyframes tableImage2 {
+   from {
+      opacity: 0%;
+   }
+
+   50% {
+      opacity: 50%;
+   }
+
+   100% {
+      opacity: 100%;
+   }
+}
+
+.google_translate {
+   top: 150px;
+   position: relative;
+}
